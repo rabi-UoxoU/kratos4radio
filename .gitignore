@@ -1,0 +1,42 @@
+# Agent CLI local state and caches
+.codex
+.codex/
+.claude/
+.cursor/
+.continue/
+.aider*
+.augment/
+.codeium/
+.windsurf/
+.zed/
+
+# Agent transcripts, patches, and scratch files
+*.chat.md
+*.prompt.md
+*.patch
+*.diff
+.agent/
+.agents/
+.ai/
+.llm/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+.cache/
+tmp/
+temp/
+
+# OS and editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
