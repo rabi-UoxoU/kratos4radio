@@ -10,6 +10,19 @@ add_action( 'after_setup_theme', function () {
     add_theme_support( 'post-formats', array( 'status' ) );
 } );
 
+add_filter(
+    'gettext',
+    function ( $translation, $text, $domain ) {
+        if ( 'kratos' === $domain && '启用/禁用文章自动保存、修订版本功能' === $text ) {
+            return '（原主题描述错误）开启后将禁用文章自动保存、修订版本功能。';
+        }
+
+        return $translation;
+    },
+    10,
+    3
+);
+
 /**
  * Shared query args for the child-theme aggregation widget.
  *
